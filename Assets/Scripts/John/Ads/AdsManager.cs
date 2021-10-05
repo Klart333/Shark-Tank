@@ -33,12 +33,18 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             OnAdFinished(true);
-            FindObjectOfType<UIRevive>().WatchedAd(true);
+
+            var rev = FindObjectOfType<UIRevive>();
+            if (rev != null)
+                rev.WatchedAd(false);
         }
         else
         {
             OnAdFinished(false);
-            FindObjectOfType<UIRevive>().WatchedAd(false);
+
+            var rev = FindObjectOfType<UIRevive>();
+            if (rev != null)
+                rev.WatchedAd(false);
         }
     }
 

@@ -5,44 +5,46 @@ using UnityEngine.UI;
 
 public class ScreenFlashCamera : MonoBehaviour // Sets the alpha of a panel in the canvas, may be a little scuffed method of a screen flash, but it works fine so whatever
 {
-    [SerializeField]
     private CameraFlash cameraFlash;
+    private CanvasRenderer canvasRenderer;
 
-    [SerializeField]
-    private Image flashImage;
+    private float speed = 5f;
 
     private void Start()
     {
+        canvasRenderer = GetComponent<CanvasRenderer>();
+
+        cameraFlash = FindObjectOfType<CameraFlash>();
         cameraFlash.OnFlash += Flash;
     }
 
     private void Flash()
     {
-
-        StartCoroutine("FlashThePanel");
+        StartCoroutine(FlashThePanel());
     }
 
     private IEnumerator FlashThePanel()
     {
-        float alphaGoal = 1;
-        float time = 0.2f;
-        float alpha = flashImage.color.a;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / time) // Makes the alpha 1 
-        {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, alphaGoal, t)); // Lerps the alpha between 0 and 1
-            flashImage.color = newColor;
-            yield return null;
-        }
-        
-        alpha = flashImage.color.a;
-        alphaGoal = 0f; // New goal
+        float t = 0;
 
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / time) // Makes the alpha 0
+        while (t <= 1)
         {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, alphaGoal, t)); 
-            flashImage.color = newColor;
+            t += Time.deltaTime * speed;
+
+            canvasRenderer.SetAlpha(t);
+
             yield return null;
         }
+
+        while (t >= 0)
+        {
+            t -= Time.deltaTime * speed;
+
+            canvasRenderer.SetAlpha(t);
+
+            yield return null;
+        }
+
+        canvasRenderer.SetAlpha(0);
     }
-
 }

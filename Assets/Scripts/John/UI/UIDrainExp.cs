@@ -35,20 +35,24 @@ public class UIDrainExp : MonoBehaviour
         }
     }
 
-    public IEnumerator StartDrain(int amount)
+    public IEnumerator StartDrain(int expAmount)
     {
         levelInfo = Level.GetLevelInfo();
 
         stupidDraining = true;
         Draining = true;
 
-        expText.text = string.Format("Exp: {0}", amount);
+        expText.text = string.Format("Exp: {0}", expAmount);
         levelText.text = levelInfo.Level.ToString();
         levelFlash.fillAmount = (float)levelInfo.Experience / (float)Level.ExpToNextLevel;
-        
+
+        float totalTime = Mathf.Pow(expAmount / 100, 0.4f) + 1;
+        int levelsGained = Level.AmountOfLevels(expAmount);
+
         yield return new WaitForSeconds(1f);
 
-        yield return FillLevelFlash(amount);
+        yield return FillLevelFlash(expAmount);
+
         yield return new WaitForSeconds(1f);
 
         yield return Fade();
@@ -57,23 +61,9 @@ public class UIDrainExp : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private IEnumerator DrainExp(int startAmount, int amountLess, float speed)
-    {
-        float t = 0;
-
-        while (t <= 1)
-        {
-            expText.text = Mathf.RoundToInt(startAmount - amountLess * t).ToString();
-            t += Time.deltaTime * speed;
-            yield return null;
-        }
-
-        expText.text = Mathf.RoundToInt(startAmount - amountLess).ToString();
-    }
-
     private IEnumerator FillLevelFlash(int amount)
     {
-        while (levelInfo.Experience + amount > Level.ExpToNextLevel)
+        while (levelInfo.Experience + amount >= Level.ExpToNextLevel)
         {
             int diffToLvl = Level.ExpToNextLevel - levelInfo.Experience;
             Level.AddExperience(diffToLvl);
@@ -97,6 +87,20 @@ public class UIDrainExp : MonoBehaviour
         yield return FillToAmount((float)levelInfo.Experience / (float)Level.ExpToNextLevel);
 
         yield return null;
+    }
+
+    private IEnumerator DrainExp(int startAmount, int amountLess, float speed)
+    {
+        float t = 0;
+
+        while (t <= 1)
+        {
+            expText.text = Mathf.RoundToInt(startAmount - amountLess * t).ToString();
+            t += Time.deltaTime * speed;
+            yield return null;
+        }
+
+        expText.text = Mathf.RoundToInt(startAmount - amountLess).ToString();
     }
 
     // Only positive

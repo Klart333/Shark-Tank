@@ -9,8 +9,44 @@ public static class Level
     {
         get
         {
-            return Mathf.FloorToInt(Mathf.Pow((GetLevelInfo().Level <= 0 ? 1 : GetLevelInfo().Level), 2f) * 5);
+            return Mathf.FloorToInt(Mathf.Pow(GetLevelInfo().Level + 1, 2f) * 5);
         }
+    }
+
+    public static int ExpToLevel(int startLevel)
+    {
+        return Mathf.FloorToInt(Mathf.Pow(startLevel, 2f) * 5f);
+    }
+
+    public static int ExpToLevels(int startLevel, int targetLevel)
+    {
+        int sum = 0;
+        for (int i = startLevel + 1; i <= targetLevel; i++)
+        {
+            sum += ExpToLevel(i);
+        }
+
+        return sum;
+    }
+
+    public static int AmountOfLevels(int expAmount)
+    {
+        int amount = 0;
+
+        for (int i = 1; i <= 200; i++)
+        {
+            var exp = ExpToLevels(GetLevelInfo().Level, GetLevelInfo().Level + i);
+            if (expAmount >= exp)
+            {
+                amount++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return amount;
     }
 
     public static void AddExperience(int amount)

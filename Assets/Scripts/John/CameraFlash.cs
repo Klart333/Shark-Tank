@@ -42,7 +42,7 @@ public class CameraFlash : MonoBehaviour, IClickable
         cameraFlashes--;
         OnFlash(); // Calls the event, so that every connected script does its part
 
-        StartCoroutine("DeactivateSharkSpawnerForDelay", 3); 
+        StartCoroutine(DeactivateSharkSpawnerForDelay(3)); 
     }
 
     private IEnumerator DeactivateSharkSpawnerForDelay(float delay) // Deactivates the sharkspawner for delay seconds

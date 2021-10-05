@@ -46,7 +46,7 @@ public class GunScript : PooledMonoBehaviour
     private void FollowClick()
     {
         Vector3 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 position = clickPos.ReplaceWith(z: -8); // Replaces the z of the vector3 to the specified -8
+        Vector3 position = new Vector3(clickPos.x, clickPos.y, -8);// Replaces the z of the vector3 to the specified -8
         transform.position = position;
     }
     private void GetSpeed()
