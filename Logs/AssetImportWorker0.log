@@ -1544,3 +1544,4 @@ Received Import Request.
 Start importing Assets/Scenes/Gameover.unity using Guid(8f5d2b0e67c7b8c49989c2a4999b62c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7450735bf6bad6773da4f64d23f1c029') in 0.029746 seconds
   Import took 0.037482 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
