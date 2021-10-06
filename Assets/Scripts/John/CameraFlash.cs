@@ -18,6 +18,9 @@ public class CameraFlash : MonoBehaviour, IClickable
     {
         OnFlash = delegate { };
         sharkSpawner = FindObjectOfType<SharkSpawner>();
+
+        var cam = Camera.main;
+        transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width * 0.9f, Screen.height * 0.15f, 0)) - new Vector3(0, 0, -9);
     }
 
     public void OnClicked()

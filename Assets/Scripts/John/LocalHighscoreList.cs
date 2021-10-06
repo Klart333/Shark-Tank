@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class HighscoreList : MonoBehaviour
+public class LocalHighscoreList : MonoBehaviour
 {
     public TextMeshProUGUI HighName;
     public TextMeshProUGUI HighScore;

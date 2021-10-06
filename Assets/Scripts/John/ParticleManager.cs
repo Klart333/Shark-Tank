@@ -27,7 +27,7 @@ public class ParticleManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            clickParticle.GetAtPosAndRot<ClickParticle>(GetWorldPointClicked(), Quaternion.identity);
+            //clickParticle.GetAtPosAndRot<ClickParticle>(GetWorldPointClicked(), Quaternion.identity);
         }
     }
 

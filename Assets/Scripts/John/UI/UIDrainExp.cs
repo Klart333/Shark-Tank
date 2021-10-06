@@ -54,7 +54,7 @@ public class UIDrainExp : MonoBehaviour
         levelText.text = levelInfo.Level.ToString();
         levelFlash.fillAmount = (float)levelInfo.Experience / (float)Level.ExpToNextLevel;
 
-        float totalTime = Mathf.Pow(expAmount / 50, 0.2f) + 3;
+        float totalTime = Mathf.Pow(expAmount / 50, 0.2f) + 1;
         int slides = Level.AmountOfLevels(expAmount) + 1;
 
         if (slides > 1)

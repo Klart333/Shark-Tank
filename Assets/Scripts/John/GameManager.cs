@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
         {
             SetGameoverScore(localScore);
             SaveScore.SaveGame(localScore, PlayerPrefs.GetString("PlayerName"));
+            FindObjectOfType<GlobalHighscores>().AddNewHighscore(PlayerPrefs.GetString("PlayerName"), localScore);
+
 
             FindObjectOfType<UIDrainExp>().StartCoroutine(FindObjectOfType<UIDrainExp>().StartDrain(localScore));
         }
