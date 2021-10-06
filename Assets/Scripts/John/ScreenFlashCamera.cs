@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class ScreenFlashCamera : MonoBehaviour // Sets the alpha of a panel in the canvas, may be a little scuffed method of a screen flash, but it works fine so whatever
 {
     private CameraFlash cameraFlash;
-    private CanvasRenderer canvasRenderer;
+    private CanvasGroup canvasGroup;
 
     private float speed = 5f;
 
     private void Start()
     {
-        canvasRenderer = GetComponent<CanvasRenderer>();
+        canvasGroup = GetComponent<CanvasGroup>();
 
         cameraFlash = FindObjectOfType<CameraFlash>();
         cameraFlash.OnFlash += Flash;
@@ -31,7 +31,7 @@ public class ScreenFlashCamera : MonoBehaviour // Sets the alpha of a panel in t
         {
             t += Time.deltaTime * speed;
 
-            canvasRenderer.SetAlpha(t);
+            canvasGroup.alpha = t;
 
             yield return null;
         }
@@ -40,11 +40,11 @@ public class ScreenFlashCamera : MonoBehaviour // Sets the alpha of a panel in t
         {
             t -= Time.deltaTime * speed;
 
-            canvasRenderer.SetAlpha(t);
+            canvasGroup.alpha = t;
 
             yield return null;
         }
 
-        canvasRenderer.SetAlpha(0);
+        canvasGroup.alpha = t;
     }
 }

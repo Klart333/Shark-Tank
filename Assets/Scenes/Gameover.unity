@@ -2691,7 +2691,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100000
+  m_text: '1100
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 46abef87025a22742bd2e6665b3e7bdb, type: 2}
@@ -3067,6 +3069,7 @@ GameObject:
   - component: {fileID: 2108930443}
   - component: {fileID: 2108930445}
   - component: {fileID: 2108930444}
+  - component: {fileID: 2108930446}
   m_Layer: 5
   m_Name: Levelpanel
   m_TagString: Untagged
@@ -3121,6 +3124,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108930442}
   m_CullTransparentMesh: 0
+--- !u!225 &2108930446
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108930442}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &2145879458
 GameObject:
   m_ObjectHideFlags: 0
