@@ -13,6 +13,23 @@ public static class Level
         }
     }
 
+    public static int CurrentExperience
+    {
+        get
+        {
+            return GetLevelInfo().Experience;
+        }
+    }
+
+    public static int CurrentLevel
+    {
+        get
+        {
+            return GetLevelInfo().Level;
+        }
+    }
+
+
     public static int ExpToLevel(int startLevel)
     {
         return Mathf.FloorToInt(Mathf.Pow(startLevel, 2f) * 5f);

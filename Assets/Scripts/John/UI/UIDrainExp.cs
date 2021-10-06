@@ -18,12 +18,20 @@ public class UIDrainExp : MonoBehaviour
     [SerializeField]
     private Image levelFlash;
 
+    private CanvasGroup canvasRenderer;
+
     private LevelInfo levelInfo;
 
+    private bool stupidDraining = false;
     private float fillSpeed = 1f;
     private float fadeSpeed = 0.6f;
+    private float timeFirstSlide = 0;
+    private float timePerSlide = 0;
 
-    private bool stupidDraining = false;
+    private void Start()
+    {
+        canvasRenderer = GetComponent<CanvasGroup>();
+    }
 
     private void Update()
     { 
@@ -46,8 +54,20 @@ public class UIDrainExp : MonoBehaviour
         levelText.text = levelInfo.Level.ToString();
         levelFlash.fillAmount = (float)levelInfo.Experience / (float)Level.ExpToNextLevel;
 
-        float totalTime = Mathf.Pow(expAmount / 100, 0.4f) + 1;
-        int levelsGained = Level.AmountOfLevels(expAmount);
+        float totalTime = Mathf.Pow(expAmount / 100, 0.3f) + 2;
+        int slides = Level.AmountOfLevels(expAmount) + 1;
+
+        if (slides > 1)
+        {
+            float firstPercent = (float)Level.CurrentExperience / (float)Level.ExpToNextLevel;
+            timeFirstSlide = (totalTime / slides) * (1.0f - firstPercent);
+
+            timePerSlide = (totalTime / (slides - 1)) + ((totalTime / slides) * firstPercent) / (slides - 1);
+        }
+        else
+        {
+            timeFirstSlide = totalTime;
+        }
 
         yield return new WaitForSeconds(1f);
 
@@ -63,6 +83,7 @@ public class UIDrainExp : MonoBehaviour
 
     private IEnumerator FillLevelFlash(int amount)
     {
+        int num = 0;
         while (levelInfo.Experience + amount >= Level.ExpToNextLevel)
         {
             int diffToLvl = Level.ExpToNextLevel - levelInfo.Experience;
@@ -70,10 +91,9 @@ public class UIDrainExp : MonoBehaviour
             amount -= diffToLvl;
 
             levelInfo = Level.GetLevelInfo();
-            fillSpeed = 1250.0f / (float)diffToLvl <= 0.2f ? 0.2f : 1250.0f / (float)diffToLvl;
 
-            StartCoroutine(DrainExp(amount + diffToLvl, diffToLvl, fillSpeed));
-            yield return FillToAmount(1);
+            StartCoroutine(DrainExp(amount + diffToLvl, diffToLvl, num++ == 0 ? timeFirstSlide : timePerSlide));
+            yield return FillToAmount(1, num++ == 0 ? timeFirstSlide : timePerSlide);
             levelFlash.fillAmount = 0;
 
             levelText.text = levelInfo.Level.ToString();
@@ -82,21 +102,20 @@ public class UIDrainExp : MonoBehaviour
         Level.AddExperience(amount);
         levelInfo = Level.GetLevelInfo();
 
-        fillSpeed = 1250.0f / (float)amount <= 0.2f ? 0.2f : 1250.0f / (float)amount;
-        StartCoroutine(DrainExp(amount, amount, fillSpeed));
-        yield return FillToAmount((float)levelInfo.Experience / (float)Level.ExpToNextLevel);
+        StartCoroutine(DrainExp(amount, amount, num++ == 0 ? timeFirstSlide : timePerSlide));
+        yield return FillToAmount((float)levelInfo.Experience / (float)Level.ExpToNextLevel, num++ == 0 ? timeFirstSlide : timePerSlide);
 
         yield return null;
     }
 
-    private IEnumerator DrainExp(int startAmount, int amountLess, float speed)
+    private IEnumerator DrainExp(int startAmount, int amountLess, float time)
     {
         float t = 0;
 
         while (t <= 1)
         {
             expText.text = Mathf.RoundToInt(startAmount - amountLess * t).ToString();
-            t += Time.deltaTime * speed;
+            t += Time.deltaTime / time;
             yield return null;
         }
 
@@ -104,7 +123,7 @@ public class UIDrainExp : MonoBehaviour
     }
 
     // Only positive
-    private IEnumerator FillToAmount(float fillTarget)
+    private IEnumerator FillToAmount(float fillTarget, float time)
     {
         float currentFillAmount = levelFlash.fillAmount;
 
@@ -114,7 +133,7 @@ public class UIDrainExp : MonoBehaviour
         {
             levelFlash.fillAmount = currentFillAmount * (1 - t) + fillTarget * t;
 
-            t += Time.deltaTime * fillSpeed;
+            t += (float)Time.deltaTime / (float)time;
             yield return null;
         }
 
@@ -122,40 +141,17 @@ public class UIDrainExp : MonoBehaviour
     }
     private IEnumerator Fade()
     {
-        Image[] images = GetComponentsInChildren<Image>();
-        Color[] colorList = new Color[8];
-        for (int i = 0; i < images.Length; i++)
-        {
-            colorList[i] = images[i].color;
-        }
-        colorList[6] = (expText.color);
-        colorList[7] = (levelText.color);
-
-        Color[] ogColorList = colorList;
-
         float t = 1;
 
         while (t >= 0)
         {
-            for (int i = 0; i < images.Length; i++)
-            {
-                colorList[i].a *= t;
-                images[i].color = colorList[i];
-            }
-            colorList[6].a *= t;
-            expText.color = colorList[6];
-            colorList[7].a *= t;
-            levelText.color = colorList[7];
-
-            for (int i = 0; i < colorList.Length; i++)
-            {
-                colorList[i].a = ogColorList[i].a;
-            }
-
             t -= Time.deltaTime * fadeSpeed;
+
+            canvasRenderer.alpha = t;
+
             yield return null;
         }
 
-        
+        canvasRenderer.alpha = 0;
     }
 }
