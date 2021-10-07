@@ -6627,7 +6627,7 @@ GameObject:
   - component: {fileID: 1638506793}
   - component: {fileID: 1638506792}
   m_Layer: 5
-  m_Name: Menu Backround (1)
+  m_Name: BackgroundRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

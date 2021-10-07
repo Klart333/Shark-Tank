@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 333299d37ee470f4dacf06fd8fc326d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1570660342485798349
+    second: SharkSpritePUMPKING_0
+  - first:
+      213: -7001507642263241412
+    second: SharkSpritePUMPKING_1
+  - first:
+      213: -9207041122376617824
+    second: SharkSpritePUMPKING_2
+  - first:
+      213: -3823855408989254862
+    second: SharkSpritePUMPKING_3
+  - first:
+      213: 8804988224066655913
+    second: SharkSpritePUMPKING_4
+  - first:
+      213: -7451705262541692932
+    second: SharkSpritePUMPKING_5
+  - first:
+      213: -2632161879410836261
+    second: SharkSpritePUMPKING_6
+  - first:
+      213: -4837754895622869604
+    second: SharkSpritePUMPKING_7
+  - first:
+      213: 4203807753438247221
+    second: SharkSpritePUMPKING_8
+  - first:
+      213: 1295028392735811052
+    second: SharkSpritePUMPKING_9
+  - first:
+      213: -1657016965605644761
+    second: SharkSpritePUMPKING_10
+  - first:
+      213: -144339028696754400
+    second: SharkSpritePUMPKING_11
+  - first:
+      213: -5588247126890891006
+    second: SharkSpritePUMPKING_12
+  - first:
+      213: 2052395441572569669
+    second: SharkSpritePUMPKING_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1312
+        width: 488
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdc8a0824b1cc510800000000000000
+      internalID: 1570660342485798349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_1
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1281
+        width: 578
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d77ba15e5a5de90800000000000000
+      internalID: -7001507642263241412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_2
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1379
+        width: 468
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0f35451e40a3080800000000000000
+      internalID: -9207041122376617824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_4
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1341
+        width: 482
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a69df2932a913a70800000000000000
+      internalID: 8804988224066655913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_5
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1322
+        width: 468
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff1b476b89369890800000000000000
+      internalID: -7451705262541692932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 660
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc746a67bea87bd0800000000000000
+      internalID: -2632161879410836261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_7
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 578
+        width: 758
+        height: 477
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dedffcd87dcdcb0800000000000000
+      internalID: -4837754895622869604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_8
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 581
+        width: 631
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53938b701ece65a30800000000000000
+      internalID: 4203807753438247221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_9
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 530
+        width: 658
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5201b367dd8f110800000000000000
+      internalID: 1295028392735811052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_10
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 0
+        width: 506
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726a74a59d71109e0800000000000000
+      internalID: -1657016965605644761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_11
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 17
+        width: 542
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0271e4b0b643ffdf0800000000000000
+      internalID: -144339028696754400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_12
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 32
+        width: 501
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209329c88de8272b0800000000000000
+      internalID: -5588247126890891006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkSpritePUMPKING_13
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 51
+        width: 523
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5426091b7c29b7c10800000000000000
+      internalID: 2052395441572569669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

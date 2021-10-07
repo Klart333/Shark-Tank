@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PumpShark
+  m_Controller: {fileID: 9100000, guid: 8bf913ad889c6b646ac904c195a2b69d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 837af81e1eda3bd45848e89516b8e8b5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1819434e794f71c4c9f8be73d9dd58b5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fe60ebd4d8daca449bbf4136cbe9f586, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2be6aef3a36e4c944956667eecaf6b02, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d8ff60388b1696a4aa2e715b1f61210a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1bf0462fb65e7d04db01695b92b48d83, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3b1f8eb9f6c11b644b68e0b1030e9848, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8bc8c95e8042bc04c88e534eb3a7f9f0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9cd25870ed5b538468a22c233a311276, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2f33a13a09281044f80348c24b8de646, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9151fa3e3d7652344a3b05f86fbe85f3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d1470d4f7f772a94a86c9af6224ec245, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 966a5b7fd89cc5349baad3780cb83f33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c890aba2d81b03446bb76beb47f639f1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b4df8a79e7faea7459b27721405d9425, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ccee3c7f1d9dc8d40b31d2d61ceec71f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a5c4144d67ec8a546bc8cfba88cdb7d8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6a0d21c023caa13478ab555f62fc9e24, type: 2}
