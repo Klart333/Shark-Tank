@@ -396,3 +396,36 @@ Total: 4.332700 ms (FindLiveObjects: 0.469300 ms CreateObjectMapping: 0.329700 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1641.012229 seconds.
+  path: Assets/Art/MenuBakgrundSak.png
+  artifactKey: Guid(bbaf058da7a475842a1da68e7d7fbdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/MenuBakgrundSak.png using Guid(bbaf058da7a475842a1da68e7d7fbdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fed73d0e9a74d81942c2f22ace0c80') in 0.114832 seconds
+  Import took 0.123788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.109405 seconds.
+  path: Assets/Art/MenuBakgrundSak.png
+  artifactKey: Guid(bbaf058da7a475842a1da68e7d7fbdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/MenuBakgrundSak.png using Guid(bbaf058da7a475842a1da68e7d7fbdfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd52f9ff1d3d97b4476e3dbcc79d7a2') in 0.085362 seconds
+  Import took 0.092926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.232521 seconds.
+  path: Assets/textures/MenuBakgrund.png
+  artifactKey: Guid(104079bc47efe224890f5f8e19f21046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textures/MenuBakgrund.png using Guid(104079bc47efe224890f5f8e19f21046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4756dee58cbc6af25c32b38627f9fb44') in 0.105674 seconds
+  Import took 0.115322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.616806 seconds.
+  path: Assets/textures/MenuBakgrund.png
+  artifactKey: Guid(104079bc47efe224890f5f8e19f21046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textures/MenuBakgrund.png using Guid(104079bc47efe224890f5f8e19f21046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37de47d404fc20a8fab5060b57e77cee') in 0.052405 seconds
+  Import took 0.063478 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
