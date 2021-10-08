@@ -18,6 +18,11 @@ public class SharkSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (!GameManager.Instance.GameStarted)
+        {
+            return;
+        }
+
         spawnTimer += Time.deltaTime;
         if (ShouldSpawn()) 
         {

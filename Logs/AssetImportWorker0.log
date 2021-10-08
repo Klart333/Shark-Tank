@@ -1,607 +1,252 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.1237; Version 2004; 64bit' Language: 'en' Physical Memory: 16303 MB
+OS: 'Windows 10 Education; OS build 17763.1879; Version 1809; 64bit' Language: 'sv' Physical Memory: 16254 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Games\Unity\2020.3.6f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Github/Wack-A-Mole
+C:/Users/john.roddis/Documents/GitHub/Shark-Tank
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63989
-Successfully changed project path to: D:/Github/Wack-A-Mole
-D:/Github/Wack-A-Mole
+49438
+Successfully changed project path to: C:/Users/john.roddis/Documents/GitHub/Shark-Tank
+C:/Users/john.roddis/Documents/GitHub/Shark-Tank
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 86.92 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 135.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
-[Subsystems] Discovering subsystems at path D:/Games/Unity/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Github/Wack-A-Mole/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/john.roddis/Documents/GitHub/Shark-Tank/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Renderer: NVIDIA GeForce MX250 (ID=0x1d13)
     Vendor:   
-    VRAM:     4053 MB
-    Driver:   27.21.14.6192
+    VRAM:     1983 MB
+    Driver:   26.21.14.4223
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'D:/Games/Unity/2020.3.6f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Games/Unity/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Games/Unity/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Games/Unity/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002588 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001959 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 83.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.355 seconds
+- Completed reload, in  2.829 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002933 seconds.
+Registered in 0.003425 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.34 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 126.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.401 seconds
+- Completed reload, in  1.812 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.1 MB.
-System memory in use after: 151.3 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3299.
-Total: 4.089700 ms (FindLiveObjects: 0.752500 ms CreateObjectMapping: 0.555500 ms MarkObjects: 2.622100 ms  DeleteObjects: 0.158500 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1483172c660139159f9e851df3a701') in 0.174205 seconds
-  Import took 0.183631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3583.840987 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72108b62532258196b2a1c0d8b5b5ad') in 0.223976 seconds
-  Import took 0.238439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.338794 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e588fcd299343454e61833400f408c') in 0.040136 seconds
-  Import took 0.057136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.531667 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a555811955fb5ac0d34456d208ffc1') in 0.178559 seconds
-  Import took 0.188550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.226559 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966efd8d7eb8e2cabbd4af99654749f8') in 0.136643 seconds
-  Import took 0.151610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.449461 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33aa5799bd80c84c89f4c6efea671bd2') in 0.112110 seconds
-  Import took 0.123674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 406.730120 seconds.
-  path: Assets/Audio/ArcadeBlip1.mp3
-  artifactKey: Guid(daaf88a10c56b1d429e0e0babf926caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/ArcadeBlip1.mp3 using Guid(daaf88a10c56b1d429e0e0babf926caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf408a8d7434325f52c3427ce4ebd0b') in 0.183527 seconds
-  Import took 0.193110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Audio/SharkDeath.mp3
-  artifactKey: Guid(661f5068a2a303540a9c6801f2d3b426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/SharkDeath.mp3 using Guid(661f5068a2a303540a9c6801f2d3b426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75731970667fb1f6a0301dd6fc8c5dfb') in 0.056725 seconds
-  Import took 0.063218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Audio/sharkGameSong2.mp3
-  artifactKey: Guid(ac75a2698a481ba4b9cfd63a8c1366e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/sharkGameSong2.mp3 using Guid(ac75a2698a481ba4b9cfd63a8c1366e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ec9ae1567574a3d2be1acb68cd50e0') in 0.051373 seconds
-  Import took 0.066512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000428 seconds.
-  path: Assets/Audio/MainMixer.mixer
-  artifactKey: Guid(0b320e88a2d9dab4298d4be899ce85aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/MainMixer.mixer using Guid(0b320e88a2d9dab4298d4be899ce85aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4114e8879e66d66f5ba18591c66f935') in 0.050264 seconds
-  Import took 0.071597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001016 seconds.
-  path: Assets/Audio/ArcadeShot.mp3
-  artifactKey: Guid(207e716e2d9e0d04ab72bf12d62e8f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/ArcadeShot.mp3 using Guid(207e716e2d9e0d04ab72bf12d62e8f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6ded61e4f4c115ecde86e7bc75f2a3') in 0.027958 seconds
-  Import took 0.047586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Audio/CreepyAmbientMusic.mp3
-  artifactKey: Guid(8e9299ec0cb880f4c9392109a8858946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/CreepyAmbientMusic.mp3 using Guid(8e9299ec0cb880f4c9392109a8858946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb17da9e7afaa24d020f4e28c1ac72f5') in 0.054095 seconds
-  Import took 0.060354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/Audio/Punch.mp3
-  artifactKey: Guid(339007f8a58cdbc499dc350e8ba0cf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Punch.mp3 using Guid(339007f8a58cdbc499dc350e8ba0cf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b291aa2800640a890fbe1dcc155cb384') in 0.059456 seconds
-  Import took 0.068049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Audio/SharkTankGameThemeREPEAT .mp3
-  artifactKey: Guid(a61dac2c76e81854dac3b56bee6b1201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/SharkTankGameThemeREPEAT .mp3 using Guid(a61dac2c76e81854dac3b56bee6b1201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb371e052f7cdb3185993f58c0f3ed7') in 0.026246 seconds
-  Import took 0.035212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Audio/stoppa und.wav
-  artifactKey: Guid(bc6238ebc0af944469eee55b0cd245e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/stoppa und.wav using Guid(bc6238ebc0af944469eee55b0cd245e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75fc9009fc4298218f40b8050643c68') in 0.025771 seconds
-  Import took 0.032730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Audio/Level Win - Tuudurt.wav
-  artifactKey: Guid(96228886a42b5b64bada764c6e937f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Level Win - Tuudurt.wav using Guid(96228886a42b5b64bada764c6e937f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd505fb6596309e6859d750fd9468966') in 0.032875 seconds
-  Import took 0.042181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Audio/CameraSound.mp3
-  artifactKey: Guid(0da8999ea3165314a8289859d720a40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/CameraSound.mp3 using Guid(0da8999ea3165314a8289859d720a40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eead7532d1d244e1e2961dafdaba0c1e') in 0.050840 seconds
-  Import took 0.061800 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Audio/SharkBite.mp3
-  artifactKey: Guid(9de3be9579a34a840b0aa968749559cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/SharkBite.mp3 using Guid(9de3be9579a34a840b0aa968749559cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9e5be23b48d2f24b99425e9bd786f1') in 0.042598 seconds
-  Import took 0.050182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.209511 seconds.
-  path: Assets/Prefabs/SharkS/WhiteShark 1.prefab
-  artifactKey: Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SharkS/WhiteShark 1.prefab using Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0e338047b504b74696c63763a2120d') in 0.341455 seconds
-  Import took 0.369255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.978132 seconds.
-  path: Assets/Prefabs/SharkS/PumpaShark.prefab
-  artifactKey: Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SharkS/PumpaShark.prefab using Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f454db899bf0de3786deb794ab664a') in 0.055489 seconds
-  Import took 0.066366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.316429 seconds.
-  path: Assets/Prefabs/SharkS/PumpaShark.prefab
-  artifactKey: Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SharkS/PumpaShark.prefab using Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052f1b2e6797b5cda9381eb1e1459a9c') in 0.076151 seconds
-  Import took 0.099026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.250783 seconds.
-  path: Assets/Art/Shark/SharkSpritePUMPKING.png
-  artifactKey: Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Shark/SharkSpritePUMPKING.png using Guid(333299d37ee470f4dacf06fd8fc326d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33111e46d6705e088c6d10faee3b4ed') in 0.116356 seconds
-  Import took 0.132192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.592543 seconds.
-  path: Assets/Animation/Shark/WhiteShark/WhiteShark.overrideController
-  artifactKey: Guid(62c28f0459606b8458c3384a5c360110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/WhiteShark/WhiteShark.overrideController using Guid(62c28f0459606b8458c3384a5c360110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcca965abf50241433ba12b05e175243') in 0.040606 seconds
-  Import took 0.055519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004728 seconds.
-  path: Assets/Animation/Shark/WhiteShark/WhiteShark.overrideController
-  artifactKey: Guid(62c28f0459606b8458c3384a5c360110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/WhiteShark/WhiteShark.overrideController using Guid(62c28f0459606b8458c3384a5c360110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcca965abf50241433ba12b05e175243') in 0.026172 seconds
-  Import took 0.041118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.118193 seconds.
-  path: Assets/Animation/Shark/WhiteShark
-  artifactKey: Guid(e3ad8d0f4f852bc47a13550ac24fece6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/WhiteShark using Guid(e3ad8d0f4f852bc47a13550ac24fece6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c3dc324230775d539e0989d43c248f') in 0.003519 seconds
-  Import took 0.013986 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.841607 seconds.
-  path: Assets/Animation/Shark/WhiteShark 1
-  artifactKey: Guid(ca0c37588811b7f428787018aac91b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/WhiteShark 1 using Guid(ca0c37588811b7f428787018aac91b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83c93dc4e1d052030dd1bf2841f51f2') in 0.014852 seconds
-  Import took 0.034239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.383613 seconds.
-  path: Assets/Animation/Shark/PumpShark
-  artifactKey: Guid(ca0c37588811b7f428787018aac91b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark using Guid(ca0c37588811b7f428787018aac91b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838caf9310a6a2e6fd52a275176c7dfa') in 0.004738 seconds
-  Import took 0.015296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.516990 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteShark.overrideController
-  artifactKey: Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteShark.overrideController using Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c001adc3342862b2745aa62c4dba2c4') in 0.021833 seconds
-  Import took 0.031244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.905792 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteGameover.anim
-  artifactKey: Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteGameover.anim using Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207b84be913ab6378641ba8570b4b34f') in 0.007430 seconds
-  Import took 0.013752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.036587 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteGameover.anim
-  artifactKey: Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteGameover.anim using Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207b84be913ab6378641ba8570b4b34f') in 0.004582 seconds
-  Import took 0.024036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.860869 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpShark.overrideController
-  artifactKey: Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpShark.overrideController using Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0f6abfae035603eaea428b875a0c79') in 0.019599 seconds
-  Import took 0.052777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 379.799362 seconds.
-  path: Assets/Prefabs/SharkS/PumpaShark.prefab
-  artifactKey: Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SharkS/PumpaShark.prefab using Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ac02672eaadd5a997ae0590d636a8a') in 0.071529 seconds
-  Import took 0.084335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.340422 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpShark.overrideController
-  artifactKey: Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpShark.overrideController using Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba4f18b531c33f3f900df64201d2de1') in 0.064090 seconds
-  Import took 0.075907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016152 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpShark.overrideController
-  artifactKey: Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpShark.overrideController using Guid(e18200a53b57e564ab8ef9c8736ad93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba4f18b531c33f3f900df64201d2de1') in 0.056109 seconds
-  Import took 0.074831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.798107 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkBite1.anim
-  artifactKey: Guid(37ab36f7cac7b444aa29d7badcd2d66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkBite1.anim using Guid(37ab36f7cac7b444aa29d7badcd2d66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262469bfd9761500dbcab830ab000b47') in 0.012417 seconds
-  Import took 0.037171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.445749 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpGameover.anim
-  artifactKey: Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpGameover.anim using Guid(db48682f2d7c863499ffc2cf55870ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d968d61ebc8599576492f4cd3c63287') in 0.005413 seconds
-  Import took 0.041564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.166557 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkBite1.anim
-  artifactKey: Guid(37ab36f7cac7b444aa29d7badcd2d66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkBite1.anim using Guid(37ab36f7cac7b444aa29d7badcd2d66d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555fdd2415ec08d1c4b3d25962f84423') in 0.005089 seconds
-  Import took 0.017884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.122230 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkBite2.anim
-  artifactKey: Guid(505b50d2b3077a3489f8251120b47fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkBite2.anim using Guid(505b50d2b3077a3489f8251120b47fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc4021082a090b7197077b1ddf62eaf') in 0.016905 seconds
-  Import took 0.025032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.282626 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkBite2.anim
-  artifactKey: Guid(505b50d2b3077a3489f8251120b47fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkBite2.anim using Guid(505b50d2b3077a3489f8251120b47fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c17af903a7011d506489221ff45f3b') in 0.007860 seconds
-  Import took 0.030015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.987369 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkBite3.anim
-  artifactKey: Guid(2f865778670f7984586997b0cf3ec372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkBite3.anim using Guid(2f865778670f7984586997b0cf3ec372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73277b093f692ed459485542e34846a4') in 0.004444 seconds
-  Import took 0.031351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.474194 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkBite3.anim
-  artifactKey: Guid(2f865778670f7984586997b0cf3ec372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkBite3.anim using Guid(2f865778670f7984586997b0cf3ec372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32088dba8f898c4a1f32211735894da2') in 0.004229 seconds
-  Import took 0.024496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.064493 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkBiteFinal.anim
-  artifactKey: Guid(65969d16e9ebe2146979eec78ea021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkBiteFinal.anim using Guid(65969d16e9ebe2146979eec78ea021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f286f6d851ae37d9c4d6f110165bcc') in 0.028917 seconds
-  Import took 0.051145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.719034 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkBiteFinal.anim
-  artifactKey: Guid(65969d16e9ebe2146979eec78ea021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkBiteFinal.anim using Guid(65969d16e9ebe2146979eec78ea021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a13f91cfac05063c33f6eec5c71bf80') in 0.007482 seconds
-  Import took 0.027902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.183147 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkRoam.anim
-  artifactKey: Guid(eef91db5f2738424cb474a170d29775e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkRoam.anim using Guid(eef91db5f2738424cb474a170d29775e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b4c0a86637ecebbc67dc48b86a6291') in 0.015733 seconds
-  Import took 0.024028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.761643 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkRoam.anim
-  artifactKey: Guid(eef91db5f2738424cb474a170d29775e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkRoam.anim using Guid(eef91db5f2738424cb474a170d29775e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e7485baf4bed30192c68696b3bd0cb') in 0.013823 seconds
-  Import took 0.034203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.025173 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkTurn1.anim
-  artifactKey: Guid(a6d3c3cfb8129f648b1ab472a9d2e39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkTurn1.anim using Guid(a6d3c3cfb8129f648b1ab472a9d2e39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c0de038aeef48c530b2420361829e2') in 0.014840 seconds
-  Import took 0.033350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.207061 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkTurn1.anim
-  artifactKey: Guid(a6d3c3cfb8129f648b1ab472a9d2e39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkTurn1.anim using Guid(a6d3c3cfb8129f648b1ab472a9d2e39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d34bbf9e0c157b1014583416ce92bf') in 0.006042 seconds
-  Import took 0.029484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.753477 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkTurn2.anim
-  artifactKey: Guid(e4786d658bc91d34aaa37e93d87a4f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkTurn2.anim using Guid(e4786d658bc91d34aaa37e93d87a4f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e9673f054c3825c5e1b05f4194b0dc') in 0.013477 seconds
-  Import took 0.020480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.547448 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkTurn2.anim
-  artifactKey: Guid(e4786d658bc91d34aaa37e93d87a4f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkTurn2.anim using Guid(e4786d658bc91d34aaa37e93d87a4f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9cca58b42e20b1f37b4ca69b46b839') in 0.005221 seconds
-  Import took 0.017976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.854641 seconds.
-  path: Assets/Animation/Shark/PumpShark/WhiteSharkTurn3.anim
-  artifactKey: Guid(68e89efb16893ed468437606346b726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/WhiteSharkTurn3.anim using Guid(68e89efb16893ed468437606346b726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecd08dda467fa3361876436cf4a0f85') in 0.032261 seconds
-  Import took 0.050850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.459051 seconds.
-  path: Assets/Animation/Shark/PumpShark/PumpSharkTurn3.anim
-  artifactKey: Guid(68e89efb16893ed468437606346b726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Shark/PumpShark/PumpSharkTurn3.anim using Guid(68e89efb16893ed468437606346b726e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b87c3fe783bad61f99ac342401ea4303') in 0.007499 seconds
-  Import took 0.038023 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002974 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.416 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.9 MB.
-System memory in use after: 145.2 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3381.
-Total: 3.649400 ms (FindLiveObjects: 0.422800 ms CreateObjectMapping: 0.317800 ms MarkObjects: 2.881700 ms  DeleteObjects: 0.025200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002814 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.316 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 145.2 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3384.
-Total: 5.254900 ms (FindLiveObjects: 1.064500 ms CreateObjectMapping: 0.729400 ms MarkObjects: 3.432100 ms  DeleteObjects: 0.026600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002932 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.389 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
 Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 145.2 MB.
+Unloading 2855 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.6 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3387.
-Total: 4.165500 ms (FindLiveObjects: 0.471800 ms CreateObjectMapping: 1.016900 ms MarkObjects: 2.642800 ms  DeleteObjects: 0.032000 ms)
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3280.
+Total: 4.239200 ms (FindLiveObjects: 0.501500 ms CreateObjectMapping: 0.254000 ms MarkObjects: 3.204600 ms  DeleteObjects: 0.229600 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607f6e2cdb7df07757afc2c9f650debe') in 0.034753 seconds
+  Import took 0.046204 seconds .
+
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003066 seconds.
+Registered in 0.002692 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.601 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2705 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3283.
+Total: 4.176500 ms (FindLiveObjects: 0.496000 ms CreateObjectMapping: 0.199600 ms MarkObjects: 3.421400 ms  DeleteObjects: 0.056500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.588 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2705 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.4 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3286.
+Total: 4.787900 ms (FindLiveObjects: 0.762500 ms CreateObjectMapping: 0.271900 ms MarkObjects: 3.676600 ms  DeleteObjects: 0.073700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 632.624914 seconds.
+  path: Assets/Scripts/John
+  artifactKey: Guid(9b4a64f5d7d4bb74585d4a0fe2417dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John using Guid(9b4a64f5d7d4bb74585d4a0fe2417dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a2baaa25e0298a61e8dd91f263459d') in 0.027178 seconds
+  Import took 0.038846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.458046 seconds.
+  path: Assets/Scripts/John/CardOption.cs
+  artifactKey: Guid(fab0d9133dfdc0846a7c2494222a3e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John/CardOption.cs using Guid(fab0d9133dfdc0846a7c2494222a3e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f61685af9acf028a96f6b809224e6d') in 0.078418 seconds
+  Import took 0.094398 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.734 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2706 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3290.
+Total: 4.468900 ms (FindLiveObjects: 0.500000 ms CreateObjectMapping: 0.249200 ms MarkObjects: 3.672900 ms  DeleteObjects: 0.045200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.375 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2706 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3293.
+Total: 3.441900 ms (FindLiveObjects: 0.443800 ms CreateObjectMapping: 0.283200 ms MarkObjects: 2.650100 ms  DeleteObjects: 0.063700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.243930 seconds.
+  path: Assets/Scripts/John/CardOption.cs
+  artifactKey: Guid(fab0d9133dfdc0846a7c2494222a3e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John/CardOption.cs using Guid(fab0d9133dfdc0846a7c2494222a3e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f01aacb7006aba2ecfd595cadfb661') in 0.009314 seconds
+  Import took 0.021232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.491120 seconds.
+  path: Assets/Scripts/John/CardHandler.cs
+  artifactKey: Guid(c6157fac93cff5747afd5ead9303a162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John/CardHandler.cs using Guid(c6157fac93cff5747afd5ead9303a162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fc58c4e8d6166c798d83dd9979029e') in 0.025874 seconds
+  Import took 0.042291 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003534 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.620 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2707 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3297.
+Total: 3.773700 ms (FindLiveObjects: 0.608600 ms CreateObjectMapping: 0.188800 ms MarkObjects: 2.941700 ms  DeleteObjects: 0.032900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.023814 seconds.
+  path: Assets/Scripts/John/Swing.cs
+  artifactKey: Guid(46480f6132afa9748849490c8a9e637d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John/Swing.cs using Guid(46480f6132afa9748849490c8a9e637d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b6e4fd2550f8e635492718cf1fff03') in 0.018354 seconds
+  Import took 0.025581 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002280 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.578 seconds
+- Completed reload, in  1.521 seconds
 Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 145.3 MB.
+Unloading 2707 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.5 MB.
+System memory in use after: 122.8 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3390.
-Total: 4.091100 ms (FindLiveObjects: 0.565000 ms CreateObjectMapping: 0.375200 ms MarkObjects: 3.122300 ms  DeleteObjects: 0.027200 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3300.
+Total: 3.496900 ms (FindLiveObjects: 0.450800 ms CreateObjectMapping: 0.153200 ms MarkObjects: 2.827100 ms  DeleteObjects: 0.063700 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 1460.683075 seconds.
-  path: Assets/Prefabs/SharkS/PumpShark.prefab
-  artifactKey: Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SharkS/PumpShark.prefab using Guid(16a1185214b2ad94798f3fb3996eec01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1916e8463d725ad873cdf29d9f03e323') in 0.239402 seconds
-  Import took 0.254119 seconds .
+  Time since last request: 454.931334 seconds.
+  path: Assets/Scripts/John/CardHandler.cs
+  artifactKey: Guid(c6157fac93cff5747afd5ead9303a162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/John/CardHandler.cs using Guid(c6157fac93cff5747afd5ead9303a162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2047c5e306db1cf5f2155c4a941c5d47') in 0.009977 seconds
+  Import took 0.021980 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002956 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.537 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.2 MB.
-System memory in use after: 145.4 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3429.
-Total: 3.721900 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.129200 ms MarkObjects: 3.214900 ms  DeleteObjects: 0.045100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

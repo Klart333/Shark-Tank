@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
 { 
     public static GameManager Instance;
 
-    // The big benefit of SerializeFields are the flexibilty of changing values in the inspector, especially when you have multiple of the same script and still want variability (This is as singleton but still)
+    public bool GameStarted { get; private set; }
+
     [SerializeField]
     private float difficultyIncreasedFromSharkKill = 0.1f; // Rather long than ununderstanble, right?
 
@@ -56,6 +57,10 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
         DifficultyMultiplier = startDifficulty;
     }
 
+    public void StartGame()
+    {
+        GameStarted = true;
+    }
     private void ActiveSceneChanged(Scene currentScene, Scene nextScene)
     {
         FindObjectOfType<FadePanel>().StartCoroutine(FindObjectOfType<FadePanel>().FadeIn());
@@ -65,6 +70,7 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
             hitSpree = 0;
             DifficultyMultiplier = startDifficulty;
             Gameover = false;
+            GameStarted = false;
             Frozen = false;
             watchedVideo = false;
 

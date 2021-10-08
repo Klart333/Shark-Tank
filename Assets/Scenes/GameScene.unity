@@ -550,10 +550,10 @@ RectTransform:
   m_Father: {fileID: 1699304093}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 377.83057, y: -556.2529}
-  m_SizeDelta: {x: 755.66113, y: 1112.5059}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263250597
 MonoBehaviour:
@@ -2910,14 +2910,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click 500% faster
+  m_text: '- Click 500% faster
 
-    Die 500% faster
+    - Die 500% faster
 
-    Gain Coins 500% faster
+    - Gain Coins 500% faster
 
-    A
-    500% faster'
+    -
+    A 500% faster'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 59015abf800f9bc4ca3f48569ff07748, type: 2}
   m_sharedMaterial: {fileID: -8286471748249067222, guid: 59015abf800f9bc4ca3f48569ff07748,
@@ -2945,7 +2945,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.85
+  m_fontSize: 51.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3515,7 +3515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1468978870
 RectTransform:
   m_ObjectHideFlags: 0
