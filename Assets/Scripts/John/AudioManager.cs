@@ -1,19 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class Audio : MonoBehaviour 
+public class AudioManager : MonoBehaviour 
 {
-    public static Audio Instance;
+    public static AudioManager Instance;
 
     [SerializeField]
     private SimpleAudioEvent doubleSFX;
 
+    [SerializeField]
+    private SimpleAudioEvent clickSound;
+
     private AudioSource audioSource;
+
+    private Queue<AudioSource> audioSources = new Queue<AudioSource>();
 
     private float stackingDoubleTimer;
     private float stackingPitch = 0.9f;
-
     private void Awake()
     {
         if (Instance == null)
@@ -52,16 +58,36 @@ public class Audio : MonoBehaviour
         }
     }
 
-    public void PlaySoundEffect(SimpleAudioEvent audioEvent, float pitch = 1)
+    public void PlaySoundEffect(SimpleAudioEvent audio, float pitch = 1)
     {
-        AudioMixerGroup audioMixerGroup = audioEvent.Mixer;
+        if (audioSources.Count == 0)
+        {
+            audioSources.Enqueue(gameObject.AddComponent<AudioSource>());
+        }
+        var source = audioSources.Dequeue();
+
+        AudioMixerGroup audioMixerGroup = audio.Mixer;
 
         if (audioMixerGroup != null)
         {
             audioMixerGroup.audioMixer.SetFloat("DoubleEffectPitch", pitch);
-            audioSource.outputAudioMixerGroup = audioMixerGroup;
+            source.outputAudioMixerGroup = audioMixerGroup;
         }
+        
+        int index = audio.Play(source);
 
-        audioEvent.Play(this.audioSource);
+        StartCoroutine(ReturnToQueue(source, audio.Clips[index].length));
+    }
+
+    private IEnumerator ReturnToQueue(AudioSource source, float length)
+    {
+        yield return new WaitForSeconds(length);
+
+        audioSources.Enqueue(source);
+    }
+
+    public void PlayClickSound()
+    {
+        PlaySoundEffect(clickSound);
     }
 }

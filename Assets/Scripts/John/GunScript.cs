@@ -12,8 +12,11 @@ public class GunScript : PooledMonoBehaviour
 
     private Vector3 lastPosition = new Vector3();
 
+    private BetterGlockCard gunCard;
+
     private float deltaSpeed;
     private float deltaDistance;
+
     private void Update()
     {
         FollowClick();
@@ -33,6 +36,7 @@ public class GunScript : PooledMonoBehaviour
         lastPosition = transform.position;
     }
 
+    #region Movement
     private void RotateToSpeed()
     {
         float currentZ = transform.eulerAngles.z;
@@ -68,13 +72,13 @@ public class GunScript : PooledMonoBehaviour
 
         transform.rotation = Quaternion.Lerp(transform.rotation, target, 0.01f); // Lerps the rotation between the target of 0 on the z and the current rotation
     }
+    #endregion
 
     private void CheckForDisable()
     {
         if (shots <= 0)
         {
             StartCoroutine(DisableAfterDelay());
-
         }
     }
 
@@ -86,5 +90,14 @@ public class GunScript : PooledMonoBehaviour
         shots = 10;
 
         gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        gunCard = FindObjectOfType<BetterGlockCard>();
+        if (gunCard != null && gunCard.IsActive)
+        {
+            shots += gunCard.AdditionalShots;
+        }
     }
 }

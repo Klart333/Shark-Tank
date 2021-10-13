@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 public class SimpleAudioEvent : ScriptableObject
 {
     [SerializeField]
-    private AudioClip[] clips = new AudioClip[0];
+    public AudioClip[] Clips = new AudioClip[0];
 
     [SerializeField]
     private RangedFloat volume = new RangedFloat(1, 1);
@@ -16,16 +16,18 @@ public class SimpleAudioEvent : ScriptableObject
 
     public AudioMixerGroup Mixer;
 
-    public void Play(AudioSource source)
+    public int Play(AudioSource source)
     {
         source.outputAudioMixerGroup = Mixer; // Can be null
 
-        int clipIndex = UnityEngine.Random.Range(0, clips.Length);
-        source.clip = clips[clipIndex];
+        int clipIndex = UnityEngine.Random.Range(0, Clips.Length);
+        source.clip = Clips[clipIndex];
 
         source.pitch = UnityEngine.Random.Range(pitch.minValue, pitch.maxValue);
         source.volume = UnityEngine.Random.Range(volume.minValue, volume.maxValue);
 
         source.Play();
+
+        return clipIndex;
     }
 }

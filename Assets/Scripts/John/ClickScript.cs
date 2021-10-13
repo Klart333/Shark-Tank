@@ -9,12 +9,27 @@ public class ClickScript : MonoBehaviour
 
     private UIHitSpree hitSpreeScript;
     private AudioSource audioSource;
+    private ClickHitboxCard clickCard;
+
+    private float radMultiplier = 1f;
 
     private void Start()
     {
         hitSpreeScript = FindObjectOfType<UIHitSpree>();
         audioSource = GetComponent<AudioSource>();
+
+        GameManager.Instance.OnGameStarted += Instance_OnGameStarted;
     }
+
+    private void Instance_OnGameStarted()
+    {
+        clickCard = FindObjectOfType<ClickHitboxCard>();
+        if (clickCard != null && clickCard.IsActive)
+        {
+            radMultiplier = clickCard.ClickRadiusMultiplier;
+        }
+    }
+
     void Update()
     {
         if (ShouldClick())
@@ -34,7 +49,7 @@ public class ClickScript : MonoBehaviour
     }
     private bool ShouldClick()
     {
-        return (Input.GetMouseButtonDown(0) && !GameManager.Instance.Frozen);
+        return (Input.GetMouseButtonDown(0) && !GameManager.Instance.Frozen && GameManager.Instance.GameStarted);
     }
 
     private bool Click()
@@ -58,7 +73,7 @@ public class ClickScript : MonoBehaviour
     {
         IClickable target = null;
 
-        Collider[] hitColliders = Physics.OverlapSphere(position, 0.1f);
+        Collider[] hitColliders = Physics.OverlapSphere(position, 0.1f * radMultiplier);
 
         foreach (Collider hit in hitColliders)
         {

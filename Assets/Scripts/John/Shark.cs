@@ -24,21 +24,23 @@ public class Shark : PooledMonoBehaviour, IClickable // I realise in hindsight t
     private AudioSource audioSource;
     private Animator animator;
     private UIHitSpree hitSpreeScript;
+    private SlowerSharksCard slowCard;
 
+    private bool[] sharkTurning;
     private float killTimer;
     private bool moving = true;
     private bool inPosition = false;
-
-    private bool[] sharkTurning;
     private float goal;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        hitSpreeScript = GameObject.Find("[TextManager]").GetComponent<UIHitSpree>();
+        hitSpreeScript = FindObjectOfType<UIHitSpree>();
+        slowCard = FindObjectOfType<SlowerSharksCard>();
         animator = GetComponent<Animator>();
         sharkTurning = new bool[3];
     }
+
     private void Update()
     {
         killTimer += Time.deltaTime;
@@ -76,14 +78,16 @@ public class Shark : PooledMonoBehaviour, IClickable // I realise in hindsight t
 
     private IEnumerator MoveToX(float xGoal)
     {
-        bool goingLeft = true;
+        bool goingLeft = transform.position.x > 0;
 
-        if (transform.position.x < 0)
+        float loggedDifficulty = Mathf.Pow(GameManager.Instance.DifficultyMultiplier, 0.15f);
+        float scaledMoveSpeed = loggedDifficulty < 1 ? 1 : loggedDifficulty; // If the multiplier is under 1 take 1 else take the multiplier
+        scaledMoveSpeed *= UnityEngine.Random.Range(0.95f, 1.05f);
+
+        if (slowCard != null && slowCard.IsActive)
         {
-            goingLeft = false;
+            scaledMoveSpeed *= slowCard.SlowMultiplier;
         }
-
-        float scaledMoveSpeed = (Mathf.Log10(GameManager.Instance.DifficultyMultiplier) < 1 ? 1 : Mathf.Log10(GameManager.Instance.DifficultyMultiplier)); // If the multiplier is under 1 take 1 else take the multiplier
 
         if (goingLeft)
         {
@@ -132,7 +136,6 @@ public class Shark : PooledMonoBehaviour, IClickable // I realise in hindsight t
             animator.SetTrigger("SharkTurn3");
         }
     }
-
 
     private float GetRandomXPos()
     {

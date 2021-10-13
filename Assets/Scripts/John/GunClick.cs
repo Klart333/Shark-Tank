@@ -10,16 +10,36 @@ public class GunClick : MonoBehaviour // Basically the same as ClickScript, with
     private UIHitSpree hitSpree;
     private ClickScript punchScript;
     private AudioSource audioSource;
+    private BetterGlockCard gunCard;
+
+    private bool gunBonus = false;
+    
     private void Awake()
     {
         hitSpree = FindObjectOfType<UIHitSpree>(); // The guns are pooled so it should be fine
         punchScript = FindObjectOfType<ClickScript>();
         audioSource = GetComponent<AudioSource>();
     }
+
     private void OnEnable()
     {
         punchScript.enabled = false;
     }
+
+    private void Start()
+    {
+        GameManager.Instance.OnGameStarted += Instance_OnGameStarted;
+    }
+
+    private void Instance_OnGameStarted()
+    {
+        gunCard = FindObjectOfType<BetterGlockCard>();
+        if (gunCard != null && gunCard.IsActive)
+        {
+            gunBonus = true;
+        }
+    }
+    
     void Update()
     {
         if (ShouldClick())
@@ -27,7 +47,7 @@ public class GunClick : MonoBehaviour // Basically the same as ClickScript, with
             gunshotSFX.Play(this.audioSource);
             if (Click() == true) // If we hit something
             {
-                GameManager.Instance.hitSpree += 2; // The gun increases the hitspree with double
+                GameManager.Instance.hitSpree += 2 + (gunBonus ? gunCard.AdditionalCombo : 0); // The gun increases the hitspree with double
                 hitSpree.UpdateHitSpree();
             }
             else

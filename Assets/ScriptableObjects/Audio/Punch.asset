@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
   m_Name: Punch
   m_EditorClassIdentifier: 
-  clips:
+  Clips:
   - {fileID: 8300000, guid: 339007f8a58cdbc499dc350e8ba0cf08, type: 3}
   volume:
     minValue: 0.8975672

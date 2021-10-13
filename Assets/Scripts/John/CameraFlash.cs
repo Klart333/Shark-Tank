@@ -23,6 +23,22 @@ public class CameraFlash : MonoBehaviour, IClickable
         transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width * 0.9f, Screen.height * 0.15f, 0)) - new Vector3(0, 0, -9);
     }
 
+    private void Start()
+    {
+        GameManager.Instance.OnGameStarted += Instance_OnGameStarted;
+    }
+
+    private void Instance_OnGameStarted()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+
+        MoreCameraCard camCard = FindObjectOfType<MoreCameraCard>();
+        if (camCard != null && camCard.IsActive)
+        {
+            cameraFlashes += camCard.AdditionalCameraFlashes;
+        }
+    }
+
     public void OnClicked()
     {
         if (cameraFlashes > 0)
@@ -33,7 +49,7 @@ public class CameraFlash : MonoBehaviour, IClickable
 
     private void Flash()
     {
-        Audio.Instance.PlaySoundEffect(cameraFlashSFX); // Plays the flash sound, doesn't necessarily need a mixer group 
+        AudioManager.Instance.PlaySoundEffect(cameraFlashSFX); // Plays the flash sound, doesn't necessarily need a mixer group 
 
         Shark[] sharks = FindObjectsOfType<Shark>();
 

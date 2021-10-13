@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
+  m_Name: SimpleClick
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 8300000, guid: a6f359a38e135fa4db5059c8b81672ed, type: 3}
+  volume:
+    minValue: 0.5264655
+    maxValue: 0.5264655
+  pitch:
+    minValue: 0.9039904
+    maxValue: 1.0960096
+  Mixer: {fileID: 0}

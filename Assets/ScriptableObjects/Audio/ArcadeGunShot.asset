@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
   m_Name: ArcadeGunShot
   m_EditorClassIdentifier: 
-  clips:
+  Clips:
   - {fileID: 8300000, guid: 207e716e2d9e0d04ab72bf12d62e8f9a, type: 3}
   volume:
-    minValue: 0.9016043
-    maxValue: 1
+    minValue: 0.7980042
+    maxValue: 0.84977984
   pitch:
     minValue: 0.94866306
     maxValue: 1.0513369

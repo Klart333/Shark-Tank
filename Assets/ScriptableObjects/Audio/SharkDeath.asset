@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
   m_Name: SharkDeath
   m_EditorClassIdentifier: 
-  clips:
+  Clips:
   - {fileID: 8300000, guid: 661f5068a2a303540a9c6801f2d3b426, type: 3}
   volume:
     minValue: 1

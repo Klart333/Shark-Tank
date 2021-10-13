@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
   m_Name: SharkBite
   m_EditorClassIdentifier: 
-  clips:
+  Clips:
   - {fileID: 8300000, guid: 9de3be9579a34a840b0aa968749559cb, type: 3}
   volume:
     minValue: 1

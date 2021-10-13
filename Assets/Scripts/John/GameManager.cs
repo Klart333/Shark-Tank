@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 public class GameManager : MonoBehaviour // The GameManager ties all the seperate scripts together, thus there is only one (well not all but most)
-{ 
+{
+    public event Action<float> OnSharkKilled = delegate { }; // Initialises the event into a empty delegate so that it doesn't blow up if it's empty
+    public event Action OnGameStarted = delegate { };
+
     public static GameManager Instance;
 
     public bool GameStarted { get; private set; }
@@ -18,8 +21,6 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
     [SerializeField]
     public float doubleTime = 1.0f;
 
-    public event Action<float> OnSharkKilled = delegate { }; // Initialises the event into a empty delegate so that it doesn't blow up if it's empty
-
     public bool Gameover = false;
     public bool Frozen = false;
 
@@ -28,10 +29,13 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
 
     public float DifficultyMultiplier { get; private set; }
 
+    private ExperienceCard clickCard;
     private Shark killerShark;
+
     private int localScore; // Only used for passing into the SetScore, fake hence called local
     private bool switchingScene = false;
     private bool watchedVideo = false;
+    private float scoreMult = 1;
 
     void Awake()
     {
@@ -51,7 +55,6 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
         OnSharkKilled += IncreaseDifficultyOnSharkKill;
     }
 
-
     private void Start()
     {
         DifficultyMultiplier = startDifficulty;
@@ -60,7 +63,19 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
     public void StartGame()
     {
         GameStarted = true;
+        OnGameStarted();
+
+        clickCard = FindObjectOfType<ExperienceCard>();
+        if (clickCard != null && clickCard.IsActive)
+        {
+            scoreMult = clickCard.ExpMult;
+        }
+        else
+        {
+            scoreMult = 1f;
+        }
     }
+
     private void ActiveSceneChanged(Scene currentScene, Scene nextScene)
     {
         FindObjectOfType<FadePanel>().StartCoroutine(FindObjectOfType<FadePanel>().FadeIn());
@@ -77,8 +92,9 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
             Pool.dictionaryPools = new Dictionary<PooledMonoBehaviour, Pool>(); // Removes the stored Pools
 
             OnSharkKilled = delegate { }; // Resets the event, so that it doesn't have old functions with messed up references 
-            
-            OnSharkKilled += Audio.Instance.AudioOnSharkKilled; // Adds these back
+            OnGameStarted = delegate { };
+
+            OnSharkKilled += AudioManager.Instance.AudioOnSharkKilled; // Adds these back
             OnSharkKilled += IncreaseDifficultyOnSharkKill; 
         }
 
@@ -88,8 +104,7 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
             SaveScore.SaveGame(localScore, PlayerPrefs.GetString("PlayerName"));
             FindObjectOfType<GlobalHighscores>().AddNewHighscore(string.IsNullOrEmpty(PlayerPrefs.GetString("PlayerName")) ? "N/A" : PlayerPrefs.GetString("PlayerName"), localScore);
 
-
-            FindObjectOfType<UIDrainExp>().StartCoroutine(FindObjectOfType<UIDrainExp>().StartDrain(localScore));
+            FindObjectOfType<UIDrainExp>().StartCoroutine(FindObjectOfType<UIDrainExp>().StartDrain(Mathf.RoundToInt(localScore * scoreMult)));
         }
     }
 

@@ -40,6 +40,11 @@ public class UIRevive : MonoBehaviour
 
     public void WatchedAd(bool watched)
     {
+        if (!GameManager.Instance.GameStarted)
+        {
+            return;
+        }
+
         ToggleRevive(false);
 
         if (!watched)
