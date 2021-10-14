@@ -35,12 +35,12 @@ public class UIDrainExp : MonoBehaviour
 
     private void Update()
     { 
-        /*if (!stupidDraining)
+        if (!stupidDraining)
         {
             int n = 0;
             int.TryParse(FindObjectOfType<ScorePanele>().GetComponent<TextMeshProUGUI>().text, out n);
             StartCoroutine(StartDrain(n));
-        }*/
+        }
     }
 
     public IEnumerator StartDrain(int expAmount)

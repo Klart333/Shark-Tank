@@ -36,7 +36,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 
             var rev = FindObjectOfType<UIRevive>();
             if (rev != null)
-                rev.WatchedAd(false);
+                rev.WatchedAd(true);
         }
         else
         {
