@@ -3145,6 +3145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allCards:
+  - {fileID: 6083396664247160706, guid: 8c7e0891d3ddec5439b258dae14cd90c, type: 3}
   - {fileID: 6299966421033883725, guid: 6e799fd4136f3db40b265801cce81ce8, type: 3}
   - {fileID: 1784885132014859330, guid: 386b43245ee4e454593f07d8d89329ef, type: 3}
   - {fileID: 8919737035908313155, guid: a6d3effa8734c9240a31962f669d32e4, type: 3}
@@ -3894,6 +3895,7 @@ MonoBehaviour:
   rows: 1
   coloumns: 3
   useElasticClamping: 1
+  clampingX: 0
   restrictToSquare: 0
 --- !u!114 &1699304095
 MonoBehaviour:

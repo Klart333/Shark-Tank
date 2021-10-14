@@ -52,6 +52,7 @@ public class UIMenuSharks : MonoBehaviour
         {
             if (Time.time - spawnedTimes[i] >= sharkLiveTime)
             {
+                Destroy(spawnedSharks[i].gameObject);
                 spawnedSharks.RemoveAt(i);
                 spawnedTimes.RemoveAt(i);
             }

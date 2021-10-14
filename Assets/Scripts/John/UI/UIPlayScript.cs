@@ -2,7 +2,7 @@
 
 public class UIPlayScript : UILoadScene
 {
-    private AdsManager adsManager;
+/*    private AdsManager adsManager;
 
     private void Start()
     {
@@ -12,12 +12,13 @@ public class UIPlayScript : UILoadScene
 
     public override void OnButtonClicked()
     {
+        AfterButtonClicked();
         adsManager.ShowAdd("video");
     }
 
     private void AdsManager_OnAdFinished(bool obj)
     {
         AfterButtonClicked();
-    }
+    }*/
 }
 

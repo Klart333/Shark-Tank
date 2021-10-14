@@ -6,7 +6,7 @@ public class CardOption : MonoBehaviour
 {
     public bool IsActive = false;
 
-    public void SelectCard()
+    public virtual void SelectCard()
     {
         AudioManager.Instance.PlayClickSound();
 

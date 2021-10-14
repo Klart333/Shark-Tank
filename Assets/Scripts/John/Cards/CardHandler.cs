@@ -6,7 +6,7 @@ using UnityEngine;
 public class CardHandler : MonoBehaviour
 {
     [SerializeField]
-    private CardOption[] allCards;
+    private List<CardOption> allCards = new List<CardOption>();
 
     [SerializeField]
     private Transform cardParent;
@@ -22,6 +22,11 @@ public class CardHandler : MonoBehaviour
 
     private void Start()
     {
+        if (PlayerPrefs.GetInt("UnlockedPump") == 1)
+        {
+            allCards.RemoveAt(0);
+        }
+
         StartCoroutine(GenerateCards());
 
         adsManager = FindObjectOfType<AdsManager>();
@@ -70,7 +75,7 @@ public class CardHandler : MonoBehaviour
             int index = 0;
             do
             {
-                index = UnityEngine.Random.Range(0, allCards.Length);
+                index = UnityEngine.Random.Range(0, allCards.Count);
             } while (takenIndexes.Contains(index));
 
             cardOptions.Add(allCards[index]);

@@ -13,6 +13,9 @@ public class UIFlexibleLayoutGroup : MonoBehaviour
     [SerializeField]
     private bool useElasticClamping = true;
 
+    [SerializeField]
+    private bool clampingX = false;
+
     [Header("Restrictions")]
     [SerializeField]
     private bool restrictToSquare = false;
@@ -31,7 +34,14 @@ public class UIFlexibleLayoutGroup : MonoBehaviour
         {
             rect = transform as RectTransform;
 
-            rect.offsetMin = new Vector2(rect.offsetMin.x, (transform.childCount * -(layoutGroup.cellSize.y + layoutGroup.spacing.y)) + rect.rect.height);
+            if (!clampingX)
+            {
+                rect.offsetMin = new Vector2(rect.offsetMin.x, (transform.childCount * -(layoutGroup.cellSize.y + layoutGroup.spacing.y)) + rect.rect.height);
+            }
+            else
+            {
+                rect.offsetMax = new Vector2((transform.childCount * (layoutGroup.cellSize.x + layoutGroup.spacing.x)) - rect.rect.width + layoutGroup.padding.right, rect.offsetMin.y);
+            }
         }
 
         if (restrictToSquare)

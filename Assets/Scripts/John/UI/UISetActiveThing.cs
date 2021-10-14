@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UISetActiveThing : MonoBehaviour
 {
-    public string Thing = "ActiveShark";
+    private string Thing = "ActiveShark";
 
     public string[] ThingNames = new string[7] {"OGShark", "CyanShark", "RedShark", "GreenShark", "WhiteShark", "GoldShark", "AntiShark" };
 

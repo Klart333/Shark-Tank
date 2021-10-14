@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
     private bool switchingScene = false;
     private bool watchedVideo = false;
     private float scoreMult = 1;
+    private float extraDifficulty = 1;
 
     void Awake()
     {
@@ -115,7 +116,7 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
 
     private void IncreaseDifficultyOnSharkKill(float timer)
     {
-        DifficultyMultiplier += difficultyIncreasedFromSharkKill;
+        DifficultyMultiplier += difficultyIncreasedFromSharkKill * extraDifficulty;
     }
 
     public void GameOver(Shark sharkThatIsBiting)
@@ -168,5 +169,10 @@ public class GameManager : MonoBehaviour // The GameManager ties all the seperat
     private void SetGameoverScore(int score)
     {
         FindObjectOfType<ScorePanele>().SkrivPoeng(score);
+    }
+
+    public void SetExtraDifficulty(float chillAight)
+    {
+        extraDifficulty = chillAight;
     }
 }

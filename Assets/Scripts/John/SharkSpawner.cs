@@ -64,13 +64,18 @@ public class SharkSpawner : MonoBehaviour
             PlayerPrefs.SetString("ActiveShark", "OGShark");
             return prefabs[0];
         }
-        PlayerPrefs.SetString("ActiveShark", "PumpShark");
+
         Shark prefab = null;
         for (int i = 0; i < prefabs.Length; i++)
         {
             if (prefabs[i].name == PlayerPrefs.GetString("ActiveShark"))
             {
                 prefab = prefabs[i];
+
+                if (prefabs[i].name == "PumpShark")
+                {
+                    GameManager.Instance.SetExtraDifficulty(2f);
+                }
             }
         }
 
