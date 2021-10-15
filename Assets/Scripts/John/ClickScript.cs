@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +8,18 @@ public class ClickScript : MonoBehaviour
     [SerializeField]
     private SimpleAudioEvent punchSFX;
 
+    [SerializeField]
+    private Missile missilePrefab;
+
     private UIHitSpree hitSpreeScript;
     private AudioSource audioSource;
     private ClickHitboxCard clickCard;
+    private MissileCard missileCard;
 
     private float radMultiplier = 1f;
+    private float chanceForMissile = -1;
+    private int missileAmount = 0;
+
 
     private void Start()
     {
@@ -28,6 +36,13 @@ public class ClickScript : MonoBehaviour
         {
             radMultiplier = clickCard.ClickRadiusMultiplier;
         }
+
+        missileCard = FindObjectOfType<MissileCard>();
+        if (missileCard != null && missileCard.IsActive)
+        {
+            chanceForMissile = missileCard.MissileSpawnPercent;
+            missileAmount = missileCard.MissileAmount;
+        }
     }
 
     void Update()
@@ -37,7 +52,11 @@ public class ClickScript : MonoBehaviour
             punchSFX.Play(audioSource); // Whether he hit or miss, works with the gun because this script is disabled
             if (Click() == true) // If we hit something
             {
-
+                float randnum = UnityEngine.Random.Range(0.0f, 1.0f);
+                if (randnum <= chanceForMissile)
+                {
+                    SpawnMissiles();
+                }
             }
             else
             {
@@ -47,6 +66,7 @@ public class ClickScript : MonoBehaviour
 
         }
     }
+
     private bool ShouldClick()
     {
         return (Input.GetMouseButtonDown(0) && !GameManager.Instance.Frozen && GameManager.Instance.GameStarted);
@@ -87,5 +107,14 @@ public class ClickScript : MonoBehaviour
         return target;
     }
 
-
+    private void SpawnMissiles()
+    {
+        Vector3 position = GetWorldPointClicked();
+        for (int i = 0; i < missileAmount; i++)
+        {
+            print("Spawning");
+            Vector3 random = new Vector3(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(-1.0f, 1.0f), 0);
+            missilePrefab.GetAtPosAndRot<Missile>(position + (random / 2.0f), Quaternion.Euler(new Vector3(0, 0, UnityEngine.Random.Range(0, 360))));
+        }
+    }
 }
