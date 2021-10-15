@@ -112,7 +112,6 @@ public class ClickScript : MonoBehaviour
         Vector3 position = GetWorldPointClicked();
         for (int i = 0; i < missileAmount; i++)
         {
-            print("Spawning");
             Vector3 random = new Vector3(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(-1.0f, 1.0f), 0);
             missilePrefab.GetAtPosAndRot<Missile>(position + (random / 2.0f), Quaternion.Euler(new Vector3(0, 0, UnityEngine.Random.Range(0, 360))));
         }
